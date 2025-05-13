@@ -4,177 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dream Massage & Spa</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
-      color: #333;
+      padding: 0;
+      background-color: #fff8f6;
     }
+
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #6a4e42;
-      padding: 15px 30px;
-      color: white;
+      background-color: #5e3c58;
+      padding: 10px;
+      text-align: center;
     }
-    .logo {
-      max-height: 60px;
+
+    header img {
+      width: 120px;
+      height: auto;
     }
+
     nav ul {
       list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
       display: flex;
+      justify-content: center;
       gap: 20px;
     }
-    nav a {
+
+    nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
     }
-    nav a:hover {
-      color: #ffddc1;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-    h1, h2 {
-      color: #3e2723;
-    }
-    .book-btn {
-      padding: 10px 15px;
-      background-color: #a1887f;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .book-btn:hover {
-      background-color: #8d6e63;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-    th, td {
-      padding: 12px;
-    }
-    footer {
-      background-color: #6a4e42;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    footer a {
-      color: white;
-      margin: 0 10px;
-      font-size: 18px;
-    }
-    footer a:hover {
+
+    nav ul li a:hover {
       color: #ffccbc;
     }
+
     @media (max-width: 600px) {
       nav ul {
         flex-direction: column;
         gap: 10px;
       }
     }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #5e3c58;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .social i {
+      margin-right: 5px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-  <img src="images/1747079328296.jpg" alt="Dream Massage & Spa Banner" width="100%">
+    <img src="images/1747080362703.jpg" alt="Dream Massage & Spa Logo" />
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#book">Book Now</a></li>
-        <li><a href="https://www.instagram.com/dream_massage_spa_centre" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://www.instagram.com/dream_massage_spa_centre" target="_blank" class="social">
+          <i class="fab fa-instagram"></i>Instagram</a>
+        </li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="home">
-    <h1 style="margin-top: -8px; text-align: center;">Welcome to Dream Massage and Spa</h1>
+    <h1>Welcome to Dream Massage & Spa</h1>
     <p><strong>Relaxation at Your Doorstep</strong></p>
-    <p>Based in Gwalior — but delivering spa-like relaxation across India, right at your home.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <table>
-      <tr>
-        <th>Service</th>
-        <th>Duration</th>
-        <th>Price</th>
-        <th></th>
-      </tr>
-      <tr>
-        <td>Full Body Massage</td>
-        <td>60 mins</td>
-        <td>₹999 <s>₹1499</s></td>
-        <td><a href="#book" class="book-btn">Book Now</a></td>
-      </tr>
-      <tr>
-        <td>Back & Shoulder Massage</td>
-        <td>30 mins</td>
-        <td>₹699 <s>₹999</s></td>
-        <td><a href="#book" class="book-btn">Book Now</a></td>
-      </tr>
-      <tr>
-        <td>Head Massage</td>
-        <td>20 mins</td>
-        <td>₹499 <s>₹799</s></td>
-        <td><a href="#book" class="book-btn">Book Now</a></td>
-      </tr>
-      <tr>
-        <td>Foot Massage</td>
-        <td>30 mins</td>
-        <td>₹599 <s>₹899</s></td>
-        <td><a href="#book" class="book-btn">Book Now</a></td>
-      </tr>
-      <tr>
-        <td>Couple Massage</td>
-        <td>60 mins</td>
-        <td>₹1899 <s>₹2499</s></td>
-        <td><a href="#book" class="book-btn">Book Now</a></td>
-      </tr>
-      <tr>
-        <td>Customized Home Service</td>
-        <td>As needed</td>
-        <td>On request</td>
-        <td><a href="#book" class="book-btn">Book Now</a></td>
-      </tr>
-    </table>
-    <p><small>*Based in Gwalior, but we offer doorstep massage services anywhere in India. Female & male therapists available. 100% safe & professional.*</small></p>
-  </section>
-
-  <section id="book">
-    <h2>Book Now</h2>
-    <p>Email us at: <a href="mailto:dreammassagegwalior@gmail.com">dreammassagegwalior@gmail.com</a></p>
-    <p>or DM on Instagram: <a href="https://www.instagram.com/dream_massage_spa_centre" target="_blank">@dream_massage_spa_centre</a></p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:dreammassagegwalior@gmail.com">dreammassagegwalior@gmail.com</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/dream_massage_spa_centre" target="_blank">@dream_massage_spa_centre</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Dream Massage & Spa. All rights reserved.</p>
-    <p><i class="fas fa-map-marker-alt"></i> Pan-India doorstep service | 100% professional & private</p>
-    <a href="https://www.instagram.com/dream_massage_spa_centre" target="_blank"><i class="fab fa-instagram"></i></a>
-  </footer>
-</body>
-</html>
+    <p>Where serenity meets luxury. Based in Gwalior, we offer the finest massage and spa treatments designed to rejuvenate your body
