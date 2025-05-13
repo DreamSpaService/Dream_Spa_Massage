@@ -4,50 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dream Massage & Spa</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fff8f6;
+      background-color: #f9f1ef;
     }
 
     header {
-      background-color: #5e3c58;
-      padding: 10px;
+      background-color: #543c4e;
+      padding: 10px 0;
       text-align: center;
-    }
-
-    header img {
-      width: 120px;
-      height: auto;
     }
 
     nav ul {
       list-style: none;
       padding: 0;
-      margin: 10px 0 0 0;
+      margin: 10px 0;
       display: flex;
       justify-content: center;
       gap: 20px;
     }
 
     nav ul li a {
-      color: white;
       text-decoration: none;
+      color: white;
       font-weight: bold;
     }
 
-    nav ul li a:hover {
-      color: #ffccbc;
-    }
-
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
+    img.logo {
+      width: 120px;
+      margin-bottom: 10px;
     }
 
     section {
@@ -56,31 +44,38 @@
     }
 
     h1 {
-      color: #5e3c58;
+      color: #543c4e;
     }
 
-    p {
-      font-size: 18px;
-      color: #333;
+    h2 {
+      color: #6a4f64;
     }
 
-    .social i {
-      margin-right: 5px;
+    footer {
+      background-color: #543c4e;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="images/1747080362703.jpg" alt="Dream Massage & Spa Logo" />
+    <img src="images/1747080362703.jpg" alt="Dream Massage & Spa Logo" class="logo">
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#book">Book Now</a></li>
-        <li><a href="https://www.instagram.com/dream_massage_spa_centre" target="_blank" class="social">
-          <i class="fab fa-instagram"></i>Instagram</a>
-        </li>
+        <li><a href="https://www.instagram.com/dream_massage_spa_centre" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -88,5 +83,29 @@
 
   <section id="home">
     <h1>Welcome to Dream Massage & Spa</h1>
-    <p><strong>Relaxation at Your Doorstep</strong></p>
-    <p>Where serenity meets luxury. Based in Gwalior, we offer the finest massage and spa treatments designed to rejuvenate your body
+    <h3>Relaxation at Your Doorstep</h3>
+    <p>Where serenity meets luxury. Based in Gwalior, we offer the finest massage and spa treatments designed to rejuvenate your body.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Swedish Massage, Deep Tissue, Aromatherapy, Head Massage, Foot Spa and more.</p>
+  </section>
+
+  <section id="book">
+    <h2>Book Your Appointment</h2>
+    <p>Call us or send a message on WhatsApp at <strong>+91-XXXXXXXXXX</strong></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: dreamspa@example.com</p>
+    <p>Location: Gwalior, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dream Massage & Spa. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
