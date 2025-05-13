@@ -6,125 +6,118 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fef6f2;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffefc;
+      color: #222;
     }
     header {
-      background-color: #ffe0cc;
-      padding: 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 10px 30px;
+      background-color: #fff8ec;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     header img {
-      height: 80px;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #444;
-      font-weight: bold;
+      width: 100px;
+      height: auto;
+      border-radius: 20px;
     }
     .hero {
       text-align: center;
       padding: 60px 20px;
-      background: url('your-background-image.jpg') no-repeat center center/cover;
-      color: white;
+      background: #fff8ec;
     }
     .hero h1 {
-      font-size: 3em;
+      font-size: 2.8rem;
+      color: #d4a373;
+      margin-bottom: 10px;
     }
-    section {
+    .hero p {
+      font-size: 1.2rem;
+      color: #444;
+      font-weight: bold;
+    }
+    .section {
       padding: 40px 20px;
       text-align: center;
     }
-    .services, .about, .booking, .contact {
-      background-color: #fff;
-      margin: 20px auto;
-      max-width: 900px;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      padding: 30px;
+    .section h2 {
+      font-size: 2rem;
+      color: #b08968;
+      margin-bottom: 20px;
     }
-    .services img {
-      width: 100px;
-      height: auto;
-      margin: 10px;
+    .services, .about, .booking, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .service-card {
+      display: inline-block;
+      width: 280px;
+      margin: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      padding: 15px;
+    }
+    .service-card img {
+      width: 100%;
       border-radius: 10px;
     }
-    form input, form textarea {
-      width: 80%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    form button {
-      padding: 10px 20px;
-      border: none;
-      background-color: #ff9966;
+    .book-btn {
+      background-color: #d4a373;
       color: white;
+      padding: 12px 25px;
+      border: none;
+      font-size: 1rem;
       border-radius: 8px;
       cursor: pointer;
+      margin-top: 10px;
     }
-    footer {
-      background-color: #ffe0cc;
-      padding: 15px;
-      text-align: center;
-      font-size: 0.9em;
+    .contact a {
+      display: block;
+      color: #b08968;
+      font-size: 1.1rem;
+      margin: 8px 0;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="1747080362703.jpg" alt="Dream Massage & Spa Logo" />
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#booking">Book Now</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>  <div class="hero">
+  </header>
+  <div class="hero">
     <h1>Welcome to Dream Massage & Spa</h1>
     <p>Experience luxury and relaxation at your doorstep.</p>
-  </div>  <section id="services" class="services">
+  </div>  <div class="section services">
     <h2>Our Services</h2>
-    <p>We offer a variety of massage therapies to suit your needs.</p>
-    <div>
-      <img src="massage1.jpg" alt="Swedish Massage" />
-      <img src="massage2.jpg" alt="Aroma Therapy" />
-      <img src="massage3.jpg" alt="Deep Tissue Massage" />
-      <img src="massage4.jpg" alt="Thai Massage" />
-      <img src="massage5.jpg" alt="Couple Massage" />
-      <img src="massage6.jpg" alt="Foot Reflexology" />
+    <div class="service-card">
+      <img src="massage1.jpg" alt="Swedish Massage">
+      <h3>Swedish Massage</h3>
+      <p>₹1200 <del>₹1500</del></p>
     </div>
-    <p><strong>Special Offers:</strong><br>
-      Swedish Massage – <s>₹1200</s> ₹999<br>
-      Aroma Therapy – <s>₹1500</s> ₹1199<br>
-      Deep Tissue – <s>₹1700</s> ₹1399<br>
-      Thai Massage – <s>₹1800</s> ₹1499<br>
-      Couple Massage – <s>₹2999</s> ₹2499<br>
-      Foot Reflexology – <s>₹800</s> ₹699
-    </p>
-  </section>  <section id="about" class="about">
+    <div class="service-card">
+      <img src="massage2.jpg" alt="Aroma Therapy">
+      <h3>Aroma Therapy</h3>
+      <p>₹999 <del>₹1300</del></p>
+    </div>
+    <div class="service-card">
+      <img src="massage3.jpg" alt="Deep Tissue">
+      <h3>Deep Tissue</h3>
+      <p>₹1399 <del>₹1700</del></p>
+    </div>
+  </div>  <div class="section booking">
+    <h2>Book Now</h2>
+    <p>Choose your service and message us your details. We offer **door-to-door service** for your comfort.</p>
+    <button class="book-btn">Book an Appointment</button>
+  </div>  <div class="section about">
     <h2>About Us</h2>
-    <p>Dream Massage & Spa is a premium at-home spa service provider. We bring the luxury and relaxation of a professional massage center to the comfort of your home. Our certified therapists ensure quality service, hygiene, and complete satisfaction.</p>
-  </section>  <section id="booking" class="booking">
-    <h2>Book Your Session</h2>
-    <p>Select your desired service and send us your contact information. We’ll confirm your appointment shortly.</p>
-    <form action="https://formspree.io/f/mayvvgqj" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Which service would you like to book?" required></textarea>
-      <button type="submit">Send Booking Request</button>
-    </form>
-  </section>  <section id="contact" class="contact">
+    <p>Dream Massage & Spa is your local wellness partner. We provide professional spa experiences at your home by certified therapists. Your comfort is our mission.</p>
+  </div>  <div class="section contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:dreamnassagegwalior@gmail.com">dreamnassagegwalior@gmail.com</a><br>
-    Instagram: <a href="https://instagram.com/dream_massage_spa_centre" target="_blank">@dream_massage_spa_centre</a></p>
-  </section>  <footer>
-    &copy; 2025 Dream Massage & Spa. All rights reserved.
-  </footer>
+    <a href="mailto:dreamnassagegwalior@gmail.com">dreamnassagegwalior@gmail.com</a>
+    <a href="https://instagram.com/dream_massage_spa_centre" target="_blank">@dream_massage_spa_centre</a>
+  </div>
 </body>
 </html>
