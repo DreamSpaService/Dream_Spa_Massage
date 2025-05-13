@@ -1,144 +1,225 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dream Massage & Spa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dream Massage & Spa, Gwalior</title>
   <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
-      color: #1a1a1a;
+      background-color: #f9f5f0;
+      color: #333;
+      scroll-behavior: smooth;
     }
-    header {
-      background-color: #0e1a40;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
+
     nav {
-      background-color: #f4c430;
-      padding: 10px;
+      background-color: #2f3142;
+      padding: 12px 0;
       text-align: center;
     }
+
     nav a {
-      margin: 0 15px;
-      color: #0e1a40;
-      font-weight: bold;
+      color: #f7c873;
+      margin: 0 20px;
       text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
     }
-    .welcome {
-      padding: 30px;
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #1e1f29;
+      color: #f7c873;
       text-align: center;
+      padding: 60px 20px;
     }
-    .logo-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
     }
-    .main-logo {
-      width: 40%;
-      max-width: 320px;
-      animation: fadeIn 1.5s ease-in-out;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .logo-banner {
+      text-align: center;
+      background-color: #fff5e1;
+      padding: 40px 20px;
+    }
+
+    .logo-banner img {
+      height: 180px;
       border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+
+    section {
+      padding: 50px 20px;
     }
+
+    h2 {
+      text-align: center;
+      color: #2f3142;
+    }
+
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      padding: 20px;
+      margin-top: 30px;
     }
-    .service {
-      background-color: #f8f8f8;
-      padding: 20px;
+
+    .service-card {
+      background-color: white;
       border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
     }
-    .service:hover {
-      transform: translateY(-5px);
-    }
-    .service img {
+
+    .service-card img {
       width: 100%;
-      height: 180px;
-      object-fit: cover;
       border-radius: 8px;
+      height: 160px;
+      object-fit: cover;
     }
-    .price {
+
+    .book-button {
+      display: block;
+      width: 220px;
+      margin: 40px auto;
+      padding: 12px;
+      background-color: #f7c873;
+      color: #1e1f29;
       font-weight: bold;
-      margin-top: 10px;
-      color: #0e1a40;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
     }
-    .discount {
-      color: red;
+
+    .book-button:hover {
+      background-color: #ddb85f;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
       font-size: 14px;
-      font-weight: bold;
     }
+
     footer {
-      background-color: #0e1a40;
+      background-color: #2f3142;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 30px 10px;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .logo-banner img {
+        height: 140px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Dream Massage & Spa</h1>
-  </header>  <nav>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>  <section class="welcome">
-    <h1>Welcome to Dream Massage & Spa</h1>
-    <p>Your ultimate at-home relaxation experience in Gwalior.</p>
-  </section>  <!-- Logo Section -->  <section class="logo-section">
-    <img src="logo.png" alt="Dream Massage & Spa Logo" class="main-logo">
-  </section>  <section id="services" class="services">
-    <div class="service">
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#booking">Book Now</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>Welcome to Dream Massage & Spa</h1>
+  <p>Luxury home massage in Gwalior — Relax. Refresh. Rejuvenate.</p>
+</div>
+
+<div class="logo-banner">
+  <img src="1746960098196.jpg" alt="Dream Massage Logo">
+</div>
+
+<section id="services">
+  <h2>Our Signature Services</h2>
+  <div class="services">
+    <div class="service-card">
       <img src="swedish.jpg" alt="Swedish Massage">
       <h3>Swedish Massage</h3>
-      <p class="price">₹1500 <span class="discount">(10% OFF)</span></p>
+      <p>Gentle full-body massage for total relaxation and circulation.</p>
     </div>
-    <div class="service">
-      <img src="deep_tissue.jpg" alt="Deep Tissue Massage">
+    <div class="service-card">
+      <img src="aroma.jpg" alt="Aroma Therapy">
+      <h3>Aroma Therapy</h3>
+      <p>Essential oils and expert touch to calm your mind and body.</p>
+    </div>
+    <div class="service-card">
+      <img src="deep.jpg" alt="Deep Tissue">
       <h3>Deep Tissue Massage</h3>
-      <p class="price">₹1800 <span class="discount">(15% OFF)</span></p>
+      <p>Intense muscle work to relieve pain and chronic tension.</p>
     </div>
-    <div class="service">
-      <img src="aroma.jpg" alt="Aromatherapy">
-      <h3>Aromatherapy</h3>
-      <p class="price">₹1700 <span class="discount">(10% OFF)</span></p>
+    <div class="service-card">
+      <img src="reflexology.jpg" alt="Foot Reflexology">
+      <h3>Foot Reflexology</h3>
+      <p>Targeted pressure point therapy to boost energy and healing.</p>
     </div>
-    <div class="service">
-      <img src="balinese.jpg" alt="Balinese Massage">
-      <h3>Balinese Massage</h3>
-      <p class="price">₹1900 <span class="discount">(20% OFF)</span></p>
+    <div class="service-card">
+      <img src="neck.jpg" alt="Back, Neck & Shoulder">
+      <h3>Back, Neck & Shoulder</h3>
+      <p>Focused massage to relieve stiffness from work and travel.</p>
     </div>
-    <div class="service">
-      <img src="thai.jpg" alt="Thai Massage">
-      <h3>Thai Massage</h3>
-      <p class="price">₹1600 <span class="discount">(10% OFF)</span></p>
+    <div class="service-card">
+      <img src="couples.jpg" alt="Couples Massage">
+      <h3>Couples Massage</h3>
+      <p>Relax side-by-side with your partner in a peaceful setting.</p>
     </div>
-    <div class="service">
-      <img src="four_hand.jpg" alt="Four Hands Massage">
-      <h3>Four Hands Massage</h3>
-      <p class="price">₹2500 <span class="discount">(15% OFF)</span></p>
-    </div>
-    <div class="service">
+    <div class="service-card">
       <img src="sports.jpg" alt="Sports Massage">
       <h3>Sports Massage</h3>
-      <p class="price">₹2000 <span class="discount">(10% OFF)</span></p>
+      <p>Boost flexibility, prevent injuries, and recover faster.</p>
     </div>
-  </section>  <footer id="contact">
-    <p>Email: dreamnassagegwalior@gmail.com</p>
-    <p>Instagram: @dream_massage_spa_centre</p>
-  </footer>
+  </div>
+  <button class="book-button" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });">Book an Appointment</button>
+</section>
+
+<section id="booking">
+  <h2>Book Your Session</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <input type="datetime-local" required />
+    <textarea rows="4" placeholder="Special requests (optional)"></textarea>
+    <button type="submit" class="book-button">Submit</button>
+  </form>
+</section>
+
+<footer id="contact">
+  <p>Contact us: <strong>dreammassagegwalior@gmail.com</strong></p>
+  <p>Instagram: <strong>@dream_massage_spa_centre</strong></p>
+  <p>&copy; 2025 Dream Massage & Spa, Gwalior</p>
+</footer>
+
 </body>
 </html>
